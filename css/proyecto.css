@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+
+header{
+
+background-color: rgb(11, 209, 11);
+display: flex;
+    
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+}
+
+h1{
+    font-size: 30px;
+    color: white;
+}
+
+nav{
+    height: 60px;
+    background-color: rgb(11, 209, 11);
+    color: black;
+    font-size: 25px;
+    font-family: 'Libre Baskerville', serif;
+    
+}
+
+.nav{
+    display: inline-block;
+    width: 22%;
+}
+a{
+    text-decoration: none;
+}
+
+main{
+    height: 1500px;
+    display: grid;
+    grid-template-columns: 20% 60%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-areas: "Costado shonen "
+                          "Costado  shojo" 
+                          "Costado  seinen"
+                          "Costado  yaoi"
+                          "Costado  yuri"
+}
+.shonen{
+    grid-area: shonen;
+    text-align: center;
+}
+.shojo{
+    grid-area: shojo;
+    text-align: center;
+}
+.seinen{
+    grid-area: seinen;
+    text-align: center;
+}
+.yaoi{
+    grid-area: yaoi;
+    text-align: center;
+}
+.yuri{
+    grid-area: yuri;
+    text-align: center;
+}
+
+footer{
+    font-size: 30px;
+    display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background: black; 
+        padding-right: 20px;
+    height: 100px;
+    background-color: rgb(11, 209, 11);
+
+
+}
+
